@@ -1,6 +1,7 @@
 # xxl-job
 
 #### 介绍
+xxl-job 这个定时任务框架还是非常nice的, 项目中也使用的比较多
 基于xxl-job 小改动, 原有项目注解@XxlJob没有删除, 启动后需手动去admin创建任务,  新增了@NewXxlJob注解 ,实现自动创建执行器 与定时任务
 
 #### 软件架构
@@ -9,15 +10,12 @@
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  基于springboot 直接使用, 只需要导购xxl-job-core包
+
+
 
 #### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![img_1.png](img_1.png)
 
 #### 参与贡献
 
