@@ -11,6 +11,7 @@ xxl-job 这个定时任务框架还是非常nice的, 项目中也使用的比较
 #### 安装教程
 
 1.  基于springboot 直接使用, 只需要导购xxl-job-core包
+2.  新增starter  自动配置
 
 
 
