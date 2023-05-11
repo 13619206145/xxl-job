@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.xuxueli</groupId>
-		<artifactId>xxl-job</artifactId>
+		<groupId>com.xuxueli.zz</groupId>
+		<artifactId>xxl-zz-job</artifactId>
 		<version>2.4.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>xxl-job-admin</artifactId>
+	<artifactId>xxl-zz-job-admin</artifactId>
 	<packaging>jar</packaging>
 
 	<dependencyManagement>

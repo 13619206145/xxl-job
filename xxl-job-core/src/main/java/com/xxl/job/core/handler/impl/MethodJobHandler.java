@@ -23,13 +23,14 @@ public class MethodJobHandler extends IJobHandler {
     }
 
     @Override
-    public void execute() throws Exception {
-        Class<?>[] paramTypes = method.getParameterTypes();
-        if (paramTypes.length > 0) {
-            method.invoke(target, new Object[paramTypes.length]);       // method-param can not be primitive-types
-        } else {
+    public void execute(String param) throws Exception {
+//        Class<?>[] paramTypes = method.getParameterTypes();
+       /* if (paramTypes.length > 0) {*/
+            // method-param can not be primitive-types
+            method.invoke(target, param);
+      /*  } else {
             method.invoke(target);
-        }
+        }*/
     }
 
     @Override

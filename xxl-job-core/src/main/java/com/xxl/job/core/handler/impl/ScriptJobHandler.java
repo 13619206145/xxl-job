@@ -45,7 +45,7 @@ public class ScriptJobHandler extends IJobHandler {
     }
 
     @Override
-    public void execute() throws Exception {
+    public void execute(String param) throws Exception {
 
         if (!glueType.isScript()) {
             XxlJobHelper.handleFail("glueType["+ glueType +"] invalid.");
@@ -72,7 +72,8 @@ public class ScriptJobHandler extends IJobHandler {
 
         // script params：0=param、1=分片序号、2=分片总数
         String[] scriptParams = new String[3];
-        scriptParams[0] = XxlJobHelper.getJobParam();
+//        scriptParams[0] = XxlJobHelper.getJobParam();
+        scriptParams[0] = param;
         scriptParams[1] = String.valueOf(XxlJobContext.getXxlJobContext().getShardIndex());
         scriptParams[2] = String.valueOf(XxlJobContext.getXxlJobContext().getShardTotal());
 

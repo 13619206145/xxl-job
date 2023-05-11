@@ -143,7 +143,7 @@ public class JobThread extends Thread{
 									// init job context
 									XxlJobContext.setXxlJobContext(xxlJobContext);
 
-									handler.execute();
+									handler.execute(xxlJobContext.getJobParam());
 									return true;
 								}
 							});
@@ -163,7 +163,7 @@ public class JobThread extends Thread{
 						}
 					} else {
 						// just execute
-						handler.execute();
+						handler.execute(xxlJobContext.getJobParam());
 					}
 
 					// valid execute handle data

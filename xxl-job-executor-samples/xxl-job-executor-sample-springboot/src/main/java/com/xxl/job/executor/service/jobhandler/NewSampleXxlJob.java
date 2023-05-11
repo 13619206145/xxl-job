@@ -25,4 +25,9 @@ public class NewSampleXxlJob {
         }
         // default success
     }
+
+    @NewXxlJob(value = "TaskJob",cron="0 0/10 * * * ?",desc = "TaskJob测试定时任务")
+    public void hello2(String executorParam){
+        log.info("整合xxl-job 打印日志:{}",executorParam);
+    }
 }
