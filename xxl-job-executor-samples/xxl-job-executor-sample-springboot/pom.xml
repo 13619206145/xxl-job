@@ -32,6 +32,12 @@
     </dependencyManagement>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.xuxueli.zz</groupId>
+            <artifactId>xxl-job-starter</artifactId>
+            <version>2.4.1-SNAPSHOT</version>
+        </dependency>
         <!-- spring-boot-starter-web (spring-webmvc + tomcat) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -45,9 +51,9 @@
 
         <!-- xxl-job-core -->
         <dependency>
-            <groupId>com.xuxueli</groupId>
-            <artifactId>xxl-job-core</artifactId>
-            <version>${project.parent.version}</version>
+            <groupId>com.xuxueli.zz</groupId>
+            <artifactId>xxl-zz-job-core</artifactId>
+            <version>2.4.1-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

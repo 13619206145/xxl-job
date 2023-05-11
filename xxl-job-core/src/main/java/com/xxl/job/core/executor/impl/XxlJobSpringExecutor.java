@@ -14,6 +14,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.core.MethodIntrospector;
 import org.springframework.core.annotation.AnnotatedElementUtils;
+import org.springframework.core.annotation.AnnotationUtils;
 
 import java.lang.reflect.Method;
 import java.util.Map;
@@ -143,9 +144,9 @@ public class XxlJobSpringExecutor extends XxlJobExecutor implements ApplicationC
         // 从方法初始化作业处理程序
         String[] beanDefinitionNames = applicationContext.getBeanNamesForType(Object.class, false, true);
         for (String beanDefinitionName : beanDefinitionNames) {
-            if(!beanDefinitionName.equals("newSampleXxlJob")){
+         /*   if(!beanDefinitionName.equals("newSampleXxlJob")){
                 continue;
-            }
+            }*/
             // 获取bean
             Object bean = null;
             Lazy onBean = applicationContext.findAnnotationOnBean(beanDefinitionName, Lazy.class);
